@@ -1,4 +1,4 @@
-# updated image for java 17
+# Base java 11 image
 FROM bellsoft/liberica-openjdk-alpine:11.0.20
 
 RUN apk add curl jq
