@@ -1,6 +1,7 @@
 package com.searchmodule.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,7 +42,8 @@ public class SearchPage {
     public void doSearch(String keyword){
         this.wait.until(ExpectedConditions.visibilityOf(this.searchTxt));
         this.searchTxt.sendKeys(keyword);
-        this.searchBtn.click();
+        //this.searchBtn.click();
+        this.searchTxt.sendKeys(Keys.RETURN);
     }
 
     public void goToVideos(){
