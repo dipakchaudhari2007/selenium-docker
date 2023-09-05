@@ -35,5 +35,4 @@ public class FindFlightPage {
         this.wait.until(ExpectedConditions.elementToBeClickable(this.secondSubmitBtn));
         this.secondSubmitBtn.click();
     }
-
 }
