@@ -17,7 +17,7 @@ pipeline {
 			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                   
 			        bat "docker login --username=${user} --password=${pass}"
-			        bat "docker push dipakchaudhari/selenium-docker"+${BUILD_NUMBER}
+			        bat "docker push dipakchaudhari/selenium-docker:${BUILD_NUMBER}"
 			    }                           
             }
         }
