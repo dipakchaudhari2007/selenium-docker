@@ -18,6 +18,7 @@ pipeline {
                   
 			        bat "docker login --username=${user} --password=${pass}"
 			        bat "docker push dipakchaudhari/selenium-docker:${BUILD_NUMBER}"
+			        bat "docker push dipakchaudhari/selenium-docker:latest"
 			    }                           
             }
         }
